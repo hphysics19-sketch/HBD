@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Shrestha 💜</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="particles"></div>
+
+<!-- Welcome Screen -->
+<section id="welcome">
+
+<div class="glass">
+
+<h1>🎉 Happy Birthday</h1>
+
+<h2>Shrestha 💜</h2>
+
+<p>
+A little surprise from your best friend...
+</p>
+
+<button id="startBtn">
+Open Your Surprise 💜
+</button>
+
+</div>
+
+</section>
+
+<!-- Main Website -->
+
+<div id="main" style="display:none;">
+
+<header>
+
+<h1>
+Happy Birthday Shrestha 🎂
+</h1>
+
+<p>
+Made with ❤️ by Harman
+</p>
+
+</header>
+
+<!-- Countdown -->
+
+<section class="card">
+
+<h2>⏳ Countdown</h2>
+
+<div id="countdown"></div>
+
+</section>
+
+<!-- Music -->
+
+<section class="card">
+
+<h2>🎵 Friendship Song</h2>
+
+<p>
+Click below to play your favourite Hindi friendship song.
+</p>
+
+<button id="musicBtn">
+▶ Play Music
+</button>
+
+<audio id="song" controls style="display:none;">
+<source src="music/song.mp3" type="audio/mp3">
+</audio>
+
+</section>
+
+<!-- Gallery -->
+
+<section class="card">
+
+<h2>📸 Our Beautiful Memories</h2>
+
+<div class="slider">
+
+<img id="slide" src="photos/photo1.jpg">
+
+</div>
+
+</section>
+
+<!-- Birthday Letter -->
+
+<section class="card">
+
+<h2>💌 A Letter For You</h2>
+
+<p>
+
+Happy Birthday, Shrestha 💜
+
+You are one of the most special people in my life.
+
+Thank you for every laugh,
+every memory,
+every late-night conversation,
+and every moment that became unforgettable because of you.
+
+May your smile always stay bright,
+your dreams come true,
+and your heart always stay happy.
+
+I feel lucky to have a friend like you.
+
+I love you so much as my best friend.
+
+Happy Birthday once again.
+
+Forever your friend,
+
+❤️ Harman
+
+</p>
+
+</section>
+
+<!-- Games Placeholder -->
+
+<section class="card">
+
+<h2>🎮 Games Coming Next...</h2>
+
+<p>
+
+Memory Quiz
+
+Guess the Emoji
+
+Birthday Trivia
+
+Photo Puzzle
+
+</p>
+
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+<!-- ================= MEMORY QUIZ ================= -->
+
+<section class="card">
+
+<h2>🧠 Memory Quiz</h2>
+
+<div id="quiz">
+
+<h3 id="question"></h3>
+
+<div id="options"></div>
+
+<button onclick="nextQuestion()">Next Question ➜</button>
+
+<p id="score"></p>
+
+</div>
+
+</section>
+
+<!-- ================= EMOJI GAME ================= -->
+
+<section class="card">
+
+<h2>😀 Guess The Emoji</h2>
+
+<div id="emojiGame">
+
+<h3 id="emojiQuestion">🎂🎁🎉</h3>
+
+<input
+type="text"
+id="emojiAnswer"
+placeholder="Type your answer">
+
+<br><br>
+
+<button onclick="checkEmoji()">
+
+Submit
+
+</button>
+
+<p id="emojiResult"></p>
+
+</div>
+
+</section>
+
+<!-- ================= BIRTHDAY TRIVIA ================= -->
+
+<section class="card">
+
+<h2>🎂 Birthday Trivia</h2>
+
+<div id="trivia">
+
+<p>
+
+What is Shrestha's birthday?
+
+</p>
+
+<button onclick="correctTrivia()">
+
+5 August
+
+</button>
+
+<button onclick="wrongTrivia()">
+
+15 August
+
+</button>
+
+<button onclick="wrongTrivia()">
+
+25 July
+
+</button>
+
+<p id="triviaResult"></p>
+
+</div>
+
+</section>
+
+<!-- ================= PHOTO PUZZLE ================= -->
+
+<section class="card">
+
+<h2>🧩 Photo Puzzle</h2>
+
+<p>
+
+Click the button to shuffle the picture.
+
+Arrange it back to complete the memory!
+
+</p>
+
+<img
+
+src="photos/photo3.jpg"
+
+id="puzzleImage"
+
+width="250"
+
+style="border-radius:15px;">
+
+<br><br>
+
+<button onclick="shufflePuzzle()">
+
+Shuffle Puzzle
+
+</button>
+
+</section>
+
+<!-- ================= FINAL SURPRISE ================= -->
+
+<section class="card final">
+
+<h1>
+
+🎆 One Last Surprise 🎆
+
+</h1>
+
+<p>
+
+Dear Shrestha,
+
+No matter how many birthdays come,
+
+I hope we always stay together,
+
+laugh together,
+
+and create more beautiful memories.
+
+You are truly one of the most precious people in my life.
+
+Thank you for being YOU.
+
+💜
+
+</p>
+
+<button onclick="showFireworks()">
+
+Open Final Surprise 🎁
+
+</button>
+
+</section>
+
+<!-- Fireworks Screen -->
+
+<div id="fireworksScreen">
+
+<h1>
+
+🎉 HAPPY BIRTHDAY SHRESTHA 💜
+
+</h1>
+
+<h2>
+
+Best Friends Forever 👭
+
+</h2>
+
+<p>
+
+Made with lots of ❤️ by Harman
+
+</p>
+
+<button onclick="closeFireworks()">
+
+Back
+
+</button>
+
+</div>
+
+<footer>
+
+<p>
+
+© 2026 • Made with ❤️ by Harman
+
+</p>
+
+</footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Birthday Website Admin</title>
+
+<style>
+body{
+font-family:Poppins,Arial,sans-serif;
+background:#6a0dad;
+color:white;
+padding:20px;
+}
+
+.card{
+background:rgba(255,255,255,.15);
+padding:20px;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:8px 0;
+border-radius:8px;
+border:none;
+}
+
+button{
+padding:10px 20px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin:5px;
+background:white;
+color:#6a0dad;
+font-weight:bold;
+}
+
+textarea{
+width:100%;
+height:250px;
+padding:10px;
+border-radius:10px;
+font-family:monospace;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>💜 Birthday Website Admin</h1>
+
+<div class="card">
+
+<h2>Add Quiz Question</h2>
+
+<input id="q" placeholder="Question">
+
+<input id="o1" placeholder="Option 1">
+<input id="o2" placeholder="Option 2">
+<input id="o3" placeholder="Option 3">
+<input id="o4" placeholder="Option 4">
+
+<input id="ans" placeholder="Correct Answer">
+
+<button onclick="addQuiz()">
+
+Add Question
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Add Emoji Game</h2>
+
+<input id="emoji" placeholder="Emoji (Example: 🎂🎁🎉)">
+
+<input id="emojiAns" placeholder="Answer">
+
+<button onclick="addEmoji()">
+
+Add Emoji
+
+</button>
+
+</div>
+
+<div class="card">
+
+<h2>Generated quiz.json</h2>
+
+<textarea id="quizOutput"></textarea>
+
+</div>
+
+<div class="card">
+
+<h2>Generated emoji.json</h2>
+
+<textarea id="emojiOutput"></textarea>
+
+</div>
+
+<script>
+
+let quiz=[];
+
+let emoji=[];
+
+function addQuiz(){
+
+quiz.push({
+
+question:document.getElementById("q").value,
+
+options:[
+
+document.getElementById("o1").value,
+
+document.getElementById("o2").value,
+
+document.getElementById("o3").value,
+
+document.getElementById("o4").value
+
+],
+
+answer:document.getElementById("ans").value
+
+});
+
+document.getElementById("quizOutput").value=
+
+JSON.stringify(quiz,null,2);
+
+}
+
+function addEmoji(){
+
+emoji.push({
+
+emoji:document.getElementById("emoji").value,
+
+answer:document.getElementById("emojiAns").value
+
+});
+
+document.getElementById("emojiOutput").value=
+
+JSON.stringify(emoji,null,2);
+
+}
+
+</script>
+<section class="card">
+
+<h2>🎂 Birthday Cake</h2>
+
+<div class="cake">
+
+<div id="flame1" class="flame"></div>
+<div id="flame2" class="flame"></div>
+<div id="flame3" class="flame"></div>
+
+🎂
+
+</div>
+
+<br>
+
+<button onclick="blowCandles()">
+🎂 Blow the Candles
+</button>
+
+</section>
+
+<div id="birthdayMessage">
+
+<h1>🎉 Happy Birthday Shrestha 💜</h1>
+
+<p>
+
+May all your dreams come true!
+
+Thank you for being my best friend ❤️
+
+</p>
+
+</div><div id="floatingContainer"></div>
+</body>
+</html>
+<section id="ending">
+
+<h1>🎉 Congratulations! 🎉</h1>
+
+<h2>
+
+You completed the Birthday Adventure 💜
+
+</h2>
+
+<p>
+
+Happy Birthday Shrestha ❤️
+
+Thank you for being
+
+my best friend.
+
+May your life always be
+
+filled with happiness,
+
+success,
+
+love,
+
+and beautiful memories.
+
+You deserve the best.
+
+Forever Friends 💜
+
+Love,
+
+Harman ❤️
+
+</p>
+
+<button onclick="location.reload()">
+
+🔄 Replay Surprise
+
+</button>
+
+</section>

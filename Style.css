@@ -1,0 +1,761 @@
+html::before {
+  content: 'CodePen ♥ The Web';
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  margin: auto;
+  width: fit-content;
+  height: fit-content;
+  font-family: monospace;
+  opacity: 0.6;
+  background: rebeccapurple;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+/* ===================================
+   HAPPY BIRTHDAY SHRESTHA 💜
+   Purple Aesthetic Theme
+=================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+
+background:linear-gradient(135deg,#5b2be0,#8a2be2,#c77dff);
+
+background-size:400% 400%;
+
+animation:bg 12s ease infinite;
+
+color:white;
+
+overflow-x:hidden;
+
+min-height:100vh;
+
+}
+
+@keyframes bg{
+
+0%{background-position:0% 50%;}
+
+50%{background-position:100% 50%;}
+
+100%{background-position:0% 50%;}
+
+}
+
+/* Floating stars */
+
+#particles{
+
+position:fixed;
+
+width:100%;
+
+height:100%;
+
+top:0;
+
+left:0;
+
+pointer-events:none;
+
+background-image:
+
+radial-gradient(white 1px,transparent 1px),
+
+radial-gradient(#ffd6ff 1px,transparent 1px);
+
+background-size:80px 80px;
+
+opacity:.35;
+
+animation:moveStars 50s linear infinite;
+
+}
+
+@keyframes moveStars{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-500px);
+
+}
+
+}
+
+/* Welcome */
+
+#welcome{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.glass{
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(15px);
+
+padding:40px;
+
+border-radius:30px;
+
+width:90%;
+
+max-width:450px;
+
+box-shadow:0 10px 40px rgba(0,0,0,.3);
+
+animation:fadeIn 2s;
+
+}
+
+.glass h1{
+
+font-size:42px;
+
+margin-bottom:10px;
+
+}
+
+.glass h2{
+
+font-size:35px;
+
+color:#ffe4ff;
+
+margin-bottom:20px;
+
+}
+
+.glass p{
+
+font-size:18px;
+
+margin-bottom:25px;
+
+line-height:1.6;
+
+}
+
+/* Buttons */
+
+button{
+
+background:#ffffff;
+
+color:#6a0dad;
+
+border:none;
+
+padding:15px 28px;
+
+border-radius:40px;
+
+font-size:18px;
+
+cursor:pointer;
+
+transition:.3s;
+
+font-weight:bold;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+background:#ffe4ff;
+
+}
+
+/* Header */
+
+header{
+
+padding:40px 20px;
+
+text-align:center;
+
+}
+
+header h1{
+
+font-size:45px;
+
+}
+
+header p{
+
+margin-top:10px;
+
+font-size:18px;
+
+opacity:.9;
+
+}
+
+/* Cards */
+
+.card{
+
+width:90%;
+
+max-width:900px;
+
+margin:35px auto;
+
+padding:30px;
+
+background:rgba(255,255,255,.15);
+
+backdrop-filter:blur(15px);
+
+border-radius:25px;
+
+box-shadow:0 10px 35px rgba(0,0,0,.25);
+
+animation:fadeUp .8s;
+
+}
+
+.card h2{
+
+margin-bottom:20px;
+
+font-size:30px;
+
+}
+
+.card p{
+
+line-height:1.8;
+
+font-size:18px;
+
+}
+
+/* Gallery */
+
+.slider{
+
+display:flex;
+
+justify-content:center;
+
+margin-top:20px;
+
+}
+
+.slider img{
+
+width:300px;
+
+max-width:100%;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+
+transition:.4s;
+
+}
+
+.slider img:hover{
+
+transform:scale(1.03);
+
+}
+
+/* Quiz */
+
+#options button{
+
+display:block;
+
+width:100%;
+
+margin:12px 0;
+
+}
+
+/* Emoji */
+
+input{
+
+padding:14px;
+
+width:100%;
+
+border:none;
+
+border-radius:12px;
+
+font-size:18px;
+
+}
+
+/* Footer */
+
+footer{
+
+text-align:center;
+
+padding:35px;
+
+font-size:15px;
+
+opacity:.8;
+
+}
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+transform:scale(.9);
+
+}
+
+to{
+
+opacity:1;
+
+transform:scale(1);
+
+}
+
+}
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+/* ======================================
+   FINAL CSS
+====================================== */
+
+/* Fireworks Screen */
+
+#fireworksScreen{
+
+display:none;
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:linear-gradient(135deg,#2d0b59,#6a0dad,#9d4edd);
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+text-align:center;
+
+z-index:9999;
+
+padding:20px;
+
+}
+
+#fireworksScreen h1{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+animation:zoom 1s infinite alternate;
+
+}
+
+#fireworksScreen h2{
+
+font-size:30px;
+
+margin-bottom:15px;
+
+}
+
+#fireworksScreen p{
+
+font-size:20px;
+
+margin-bottom:30px;
+
+}
+
+/* Confetti */
+
+.confetti{
+
+position:fixed;
+
+top:-20px;
+
+width:12px;
+
+height:12px;
+
+border-radius:50%;
+
+animation:fall linear forwards;
+
+z-index:99999;
+
+}
+
+@keyframes fall{
+
+0%{
+
+transform:translateY(0) rotate(0);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(110vh) rotate(720deg);
+
+opacity:0;
+
+}
+
+}
+
+/* Floating Hearts */
+
+.heart{
+
+position:fixed;
+
+bottom:-40px;
+
+animation:floatHeart 6s linear forwards;
+
+pointer-events:none;
+
+z-index:1000;
+
+}
+
+@keyframes floatHeart{
+
+0%{
+
+transform:translateY(0) scale(0.8);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-110vh) scale(1.8);
+
+opacity:0;
+
+}
+
+}
+
+/* Countdown */
+
+#countdown{
+
+font-size:30px;
+
+font-weight:bold;
+
+margin-top:20px;
+
+text-align:center;
+
+}
+
+/* Quiz Buttons */
+
+#options button{
+
+margin:10px 0;
+
+width:100%;
+
+}
+
+/* Final Card */
+
+.final{
+
+text-align:center;
+
+}
+
+.final h1{
+
+font-size:45px;
+
+margin-bottom:20px;
+
+}
+
+.final p{
+
+font-size:20px;
+
+line-height:1.8;
+
+}
+
+@keyframes zoom{
+
+from{
+
+transform:scale(1);
+
+}
+
+to{
+
+transform:scale(1.08);
+
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header h1{
+
+font-size:32px;
+
+}
+
+.glass h1{
+
+font-size:34px;
+
+}
+
+.glass h2{
+
+font-size:28px;
+
+}
+
+.card{
+
+padding:20px;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+#fireworksScreen h1{
+
+font-size:34px;
+
+}
+
+}
+.cake{
+
+font-size:120px;
+
+text-align:center;
+
+position:relative;
+
+}
+
+.flame{
+
+width:18px;
+
+height:28px;
+
+background:orange;
+
+border-radius:50%;
+
+position:absolute;
+
+animation:flicker .3s infinite alternate;
+
+}
+
+#flame1{
+
+top:5px;
+left:95px;
+
+}
+
+#flame2{
+
+top:5px;
+left:140px;
+
+}
+
+#flame3{
+
+top:5px;
+left:185px;
+
+}
+
+@keyframes flicker{
+
+from{
+
+transform:scale(1);
+
+}
+
+to{
+
+transform:scale(.8);
+
+}
+
+}
+
+#birthdayMessage{
+
+display:none;
+
+text-align:center;
+
+padding:40px;
+
+animation:pop 1s;
+
+}
+
+@keyframes pop{
+
+from{
+
+transform:scale(.3);
+
+opacity:0;
+
+}
+
+to{
+
+transform:scale(1);
+
+opacity:.floating{
+
+position:fixed;
+
+bottom:-50px;
+
+animation:floatUp linear forwards;
+
+pointer-events:none;
+
+}
+
+@keyframes floatUp{
+
+0%{
+
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-110vh);
+
+opacity:#ending{
+
+display:none;
+
+text-align:center;
+
+padding:60px;
+
+animation:fadeIn 1.5s;
+
+}
+
+#ending h1{
+
+font-size:50px;
+
+margin-bottom:20px;
+
+}
+
+#ending p{
+
+font-size:22px;
+
+line-height:1.8;
+
+}
